@@ -1,9 +1,9 @@
 import 'package:ecom_app/models/product.dart';
 import 'package:ecom_app/providers/cart_provider.dart';
 import 'package:ecom_app/screens/home_screen.dart';
+import 'package:ecom_app/services/user_service.dart'; // import UserService
 import 'package:ecom_app/widgets/available_size.dart';
 import 'package:flutter/material.dart';
-
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key, required this.product});
@@ -14,12 +14,11 @@ class DetailsScreen extends StatefulWidget {
 }
 
 class _DetailsScreenState extends State<DetailsScreen> {
+  final UserService _userService = UserService(); // create an instance of UserService
+
   @override
   Widget build(BuildContext context) {
-
     final provider = CartProvider.of(context);
-
-
 
     return Scaffold(
       appBar: PreferredSize(
@@ -37,7 +36,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           ),
           title: const Text(
             'Details',
-            style:  TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white),
           ),
           centerTitle: true,
           automaticallyImplyLeading: true,
@@ -77,14 +76,16 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   Text(
                     widget.product.name,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 17, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   Text(
                     "₹ ${widget.product.price}",
-                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 20,
@@ -112,8 +113,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   ),
                   Row(
                     children: [
-                      if (widget.product.id >= 1 &&
-                          widget.product.id <= 25) ...[
+                      if (int.parse(widget.product.id) >= 1 &&
+                          int.parse(widget.product.id) <= 25) ...[
                         const AvailableSize(
                           size: "US 6",
                         ),
@@ -126,11 +127,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         const AvailableSize(
                           size: "US 9",
                         ),
-
                       ],
-                      if (widget.product.id >= 26 &&
-                          widget.product.id <= 50) ...[
-
+                      if (int.parse(widget.product.id) >= 26 &&
+                          int.parse(widget.product.id) <= 50) ...[
                         const AvailableSize(
                           size: "M",
                         ),
@@ -144,8 +143,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           size: "XXL",
                         ),
                       ],
-                      if (widget.product.id >= 51 &&
-                          widget.product.id <= 75) ...[
+                      if (int.parse(widget.product.id) >= 51 &&
+                          int.parse(widget.product.id) <= 75) ...[
                         const AvailableSize(
                           size: "128GB",
                         ),
@@ -158,10 +157,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         const AvailableSize(
                           size: "1TB",
                         ),
-
                       ],
-                      if (widget.product.id >= 76 &&
-                          widget.product.id <= 100) ...[
+                      if (int.parse(widget.product.id) >= 76 &&
+                          int.parse(widget.product.id) <= 100) ...[
                         const AvailableSize(
                           size: "128GB",
                         ),
@@ -172,9 +170,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           size: "512GB",
                         ),
                       ],
-                      if (widget.product.id >= 101 &&
-                          widget.product.id <= 125) ...[
-
+                      if (int.parse(widget.product.id) >= 101 &&
+                          int.parse(widget.product.id) <= 125) ...[
                         const AvailableSize(
                           size: "M",
                         ),
@@ -255,7 +252,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         fontWeight: FontWeight.bold),
                   ),
                   ElevatedButton.icon(
-                    onPressed: () {
+                    onPressed: () async {
+                      await _userService.addToCart(widget.product); // call the addToCart function
                       provider.toggleProduct(widget.product);
                       Navigator.push(
                         context,
@@ -264,9 +262,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ),
                       );
                     },
-                    label: const Text("Add to Cart", style: TextStyle(color: Colors.black),),
-                    icon: const Icon(Icons.add_shopping_cart_sharp,
-                    color: Colors.black,),
+                    label: const Text(
+                      "Add to Cart",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    icon: const Icon(
+                      Icons.add_shopping_cart_sharp,
+                      color: Colors.black,
+                    ),
                   )
                 ],
               ),

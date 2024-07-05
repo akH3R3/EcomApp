@@ -9,13 +9,12 @@ class StartingScreen extends StatefulWidget {
 
   @override
   State<StartingScreen> createState() => _StartingScreenState();
-
 }
 
 class _StartingScreenState extends State<StartingScreen> {
   int isSelected = 0;
 
-  _buildTShirts(){
+  _buildTShirts() {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -25,8 +24,12 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final tshirtlist = MyProducts.tShirts[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: tshirtlist)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailsScreen(product: tshirtlist)));
             },
             child: ProductCard(product: tshirtlist));
       },
@@ -34,7 +37,7 @@ class _StartingScreenState extends State<StartingScreen> {
     );
   }
 
-  _buildPhones(){
+  _buildPhones() {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -44,8 +47,11 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final phonelist = MyProducts.phones[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: phonelist)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DetailsScreen(product: phonelist)));
             },
             child: ProductCard(product: phonelist));
       },
@@ -53,7 +59,7 @@ class _StartingScreenState extends State<StartingScreen> {
     );
   }
 
-  _buildLaptops(){
+  _buildLaptops() {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -63,8 +69,12 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final laptoplist = MyProducts.laptops[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: laptoplist)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailsScreen(product: laptoplist)));
             },
             child: ProductCard(product: laptoplist));
       },
@@ -72,7 +82,7 @@ class _StartingScreenState extends State<StartingScreen> {
     );
   }
 
-  _buildSneakers(){
+  _buildSneakers() {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -82,8 +92,12 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final sneakerlist = MyProducts.sneakers[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: sneakerlist)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailsScreen(product: sneakerlist)));
             },
             child: ProductCard(product: sneakerlist));
       },
@@ -91,7 +105,7 @@ class _StartingScreenState extends State<StartingScreen> {
     );
   }
 
-  _buildJackets(){
+  _buildJackets() {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -101,8 +115,12 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final jacketlist = MyProducts.jackets[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product:jacketlist)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailsScreen(product: jacketlist)));
             },
             child: ProductCard(product: jacketlist));
       },
@@ -120,10 +138,14 @@ class _StartingScreenState extends State<StartingScreen> {
       itemBuilder: (BuildContext context, int index) {
         final allProducts = MyProducts.allProducts;
         allProducts.shuffle();
-        final allProductIndex=allProducts[index];
+        final allProductIndex = allProducts[index];
         return GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: allProductIndex)));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          DetailsScreen(product: allProductIndex)));
             },
             child: ProductCard(product: allProductIndex));
       },
@@ -133,7 +155,7 @@ class _StartingScreenState extends State<StartingScreen> {
 
   Widget _buildProductCategory({required int index, required String name}) {
     return GestureDetector(
-      onTap: ()=> setState(()=>isSelected=index) ,
+      onTap: () => setState(() => isSelected = index),
       child: Container(
         width: 100,
         height: 40,
@@ -149,10 +171,11 @@ class _StartingScreenState extends State<StartingScreen> {
         child: Text(
           name,
           style: TextStyle(
-              color: isSelected == index ? Colors.black : Colors.white,
-              fontSize: isSelected == index ? 15 : 14,
-              fontWeight: isSelected == index ? FontWeight.bold : FontWeight.normal,
-              ),
+            color: isSelected == index ? Colors.black : Colors.white,
+            fontSize: isSelected == index ? 15 : 14,
+            fontWeight:
+                isSelected == index ? FontWeight.bold : FontWeight.normal,
+          ),
         ),
       ),
     );
@@ -185,20 +208,18 @@ class _StartingScreenState extends State<StartingScreen> {
           const SizedBox(
             height: 16,
           ),
-          Expanded(child:
-          isSelected==0?
-          _buildAllProducts() :
-          isSelected==1?
-          _buildJackets():
-          isSelected==2?
-          _buildSneakers():
-          isSelected==3?
-          _buildLaptops():
-              isSelected==4?
-              _buildPhones():
-                  _buildTShirts()
-
-          )
+          Expanded(
+              child: isSelected == 0
+                  ? _buildAllProducts()
+                  : isSelected == 1
+                      ? _buildJackets()
+                      : isSelected == 2
+                          ? _buildSneakers()
+                          : isSelected == 3
+                              ? _buildLaptops()
+                              : isSelected == 4
+                                  ? _buildPhones()
+                                  : _buildTShirts())
         ],
       ),
     );

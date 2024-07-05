@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecom_app/widgets/my_textfield.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -84,29 +83,49 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            MyTextfield('Email', false, _emailController),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: _isLoading ? null : _resetPassword,
-              style: ElevatedButton.styleFrom(
-                shadowColor: Colors.blueAccent,
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            TextField(
+              controller: _emailController,
+              decoration: InputDecoration(
+                labelText: 'Email',
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.grey)),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    borderSide: BorderSide(color: Colors.black)),
+                fillColor: const Color.fromARGB(255, 239, 226, 226),
+                filled: true,
               ),
-              child: _isLoading
-                  ? SizedBox(
-                      height: 20,
-                      width: 20,
-                      child: CircularProgressIndicator(
-                        color: Colors.white,
-                        strokeWidth: 2,
-                      ),
-                    )
-                  : Text('Reset Password'),
-            )
+              keyboardType: TextInputType.emailAddress,
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(1.0),
+              child: Container(
+                height: 47,
+                width: 175,
+                
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStateColor.transparent,
+                  ),
+                  onPressed: _isLoading ? null : _resetPassword,
+                  child: _isLoading
+                      ? CircularProgressIndicator(color: Colors.white)
+                      : Text(
+                          'Reset Password',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 17,
+                          ),
+                        ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

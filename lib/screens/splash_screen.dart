@@ -1,5 +1,6 @@
 
 import 'package:ecom_app/screens/auth_screens/login_screen.dart';
+import 'package:ecom_app/screens/home_screen.dart';
 import 'package:ecom_app/services/authwrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => LoginScreen(),
+          builder: (context) => HomeScreen(index: 0),
         ),
       );
     });

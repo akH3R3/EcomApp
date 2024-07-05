@@ -1,153 +1,67 @@
+import 'package:ecom_app/models/product.dart';
+import 'package:ecom_app/services/user_service.dart';
 import 'package:ecom_app/widgets/my_appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../../../providers/cart_provider.dart';
-import '../../details_screen.dart';
-
-class CartDetails extends StatefulWidget {
-  const CartDetails({super.key});
-
+class CartScreen extends StatefulWidget {
   @override
-  State<CartDetails> createState() => _CartDetailsState();
+  _CartScreenState createState() => _CartScreenState();
 }
 
-class _CartDetailsState extends State<CartDetails> {
+class _CartScreenState extends State<CartScreen> {
+  final UserService _userService = UserService();
+  List<Product> _cartItems = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchCartItems();
+  }
+
+  Future<void> _fetchCartItems() async {
+    List<Product> cartItems = await _userService.fetchCart();
+    setState(() {
+      _cartItems = cartItems;
+    });
+  }
+
+  Future<void> _removeFromCart(Product product) async {
+    await _userService.removeFromCart(product);
+    _fetchCartItems();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final provider = CartProvider.of(context);
-    final finalList = provider.cart;
-
-
-    buildProductQuantity(IconData icon, int index) {
-      return GestureDetector(
-        onTap: () {
-          setState(() {
-            if (icon == Icons.add) {
-              provider.incrementQuantity(index);
-
-            } else if (icon == Icons.remove && finalList[index].quantity > 1) {
-              provider.decrementQuantity(index);
-            }
-          });
-        },
-        child: Container(
-          decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.white,
-          ),
-          child: Icon(
-            icon,
-            size: 20,
-          ),
-        ),
-      );
-    }
-
-    return  Scaffold(
-      appBar: MyAppBar(title: 'My Cart'),
-      body: Column(
-          children: [
-            
-           Expanded(
-              child: ListView.builder(
-                itemCount: finalList.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Slidable(
-                      endActionPane: ActionPane(
-                        motion: const ScrollMotion(),
-                        children: [
-                          SlidableAction(
-                            onPressed: (context) {
-                              finalList.removeAt(index);
-                              setState(() {});
-                            },
-                            backgroundColor: Colors.redAccent,
-                            foregroundColor: Colors.white,
-                            icon: Icons.delete,
-                            label: 'Delete',
-                          )
-                        ],
-                      ),
-                      child: ListTile(
-                        onTap:(){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen(product: finalList[index],),));
-                        },
-                        title: Text(
-                          finalList[index].name,
-                          style: const TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
-                        ),
-                        subtitle: Text("₹ ${finalList[index].price}\n"),
-                        leading: CircleAvatar(
-                          radius: 30,
-                          backgroundImage: AssetImage(
-                            finalList[index].image,
-                          ),
-                          backgroundColor: Colors.grey.withOpacity(0.2),
-                        ),
-                        trailing: Column(
-                          children: [
-                            buildProductQuantity(Icons.add, index),
-                            Text(
-                              finalList[index].quantity.toString(),
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 10),
-                            ),
-                            buildProductQuantity(Icons.remove, index),
-                          ],
-                        ),
-                        tileColor: Colors.grey[100],
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: MediaQuery.of(context).size.height / 10,
-                decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [
-                        Colors.pink,
-                        Colors.purple,
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(20)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "₹ ${provider.getTotalPrice()}",
-                      style: const TextStyle(
-                          fontSize: 26,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    ElevatedButton.icon(
-      
+    return Scaffold(
+      appBar: MyAppBar(title: 'Cart'),
+      body: _cartItems.isEmpty
+          ? Center(child: Text('Your cart is empty', 
+          style: TextStyle(
+            fontSize: 18,
+            color: Colors.black
+          ),))
+          : ListView.builder(
+              itemCount: _cartItems.length,
+              itemBuilder: (context, index) {
+                final product = _cartItems[index];
+                return Card(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    leading: Image.network(product.image, width: 50, height: 50),
+                    title: Text(product.name),
+                    subtitle: Text('\$${product.price.toStringAsFixed(2)}'),
+                    trailing: IconButton(
+                      icon: Icon(Icons.remove_shopping_cart),
                       onPressed: () {
+                        _removeFromCart(product);
                       },
-                      label: const Text("Check-Out", style: TextStyle(color: Colors.black),),
-                      icon: const Icon(
-                        Icons.done_all_rounded,
-                        size: 15,
-                        color: Colors.black,
-                        ),
-                    )
-                  ],
-                ),
-              ),
+                    ),
+                  ),
+                );
+              },
             ),
-          ],
-        ),
     );
-
   }
 }

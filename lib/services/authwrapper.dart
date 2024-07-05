@@ -1,5 +1,7 @@
 import 'package:ecom_app/screens/auth_screens/login_screen.dart';
 import 'package:ecom_app/screens/home_screen.dart';
+import 'package:ecom_app/screens/onboarding_screen.dart';
+import 'package:ecom_app/screens/splash_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -10,15 +12,12 @@ class AuthWrapper extends StatelessWidget {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          // Show a loading spinner
           return CircularProgressIndicator();
         }
         if (snapshot.hasData) {
-          // User is logged in, navigate to HomePage
-          return HomeScreen(index: 0,);
+          return SplashScreen();
         } else {
-          // User is not logged in, navigate to LoginPage
-          return LoginScreen();
+          return OnBoardingScreen();
         }
       },
     );

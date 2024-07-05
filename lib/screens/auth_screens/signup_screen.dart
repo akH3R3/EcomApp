@@ -112,24 +112,25 @@ class _SignUpScreenState extends State<SignUpScreen> {
               children: [
                 SizedBox(height: 20),
                 Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: MyTextfield(
-                        'First Name', false, _firstNameController)),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+                    child:
+                        MyTextfield('First Name', false, _firstNameController)),
                 Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: MyTextfield(
-                        'Last Name', false, _lastNameController)),
-               
-               
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+                    child:
+                        MyTextfield('Last Name', false, _lastNameController)),
                 Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 15),
                     child: MyTextfield('Email', false, _emailController)),
                 Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child:
-                      MyTextfield('Passsword', true, _passwordController),
+                  padding:
+                      const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+                  child: MyTextfield('Passsword', true, _passwordController),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 5),
                 MyButton(
                   text: 'Register',
                   onPressed: () {

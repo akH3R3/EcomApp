@@ -3,7 +3,7 @@ import 'package:ecom_app/models/product.dart';
 class MyProducts{
   static List<Product> allProducts = [
     Product(
-      id: 1,
+      id: '1',
       name: 'Nike Air Max 200',
       category: 'Trending',
       image: 'assets/sneakers/1.png',
@@ -13,7 +13,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 2,
+      id: '2',
       name: 'Adidas Ultraboost 21',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -23,7 +23,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 3,
+      id: '3',
       name: 'New Balance Fresh Foam 1080v11',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -33,7 +33,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 4,
+      id: '4',
       name: 'Nike React Infinity Run Flyknit',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -43,7 +43,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 5,
+      id: '5',
       name: 'Asics Gel-Kayano 27',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -53,7 +53,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 6,
+      id: '6',
       name: 'Nike Air Force 1 Low',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -63,7 +63,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 7,
+      id: '7',
       name: 'Adidas Stan Smith',
       category: 'Classic',
       image: 'assets/sneakers/2.png',
@@ -73,7 +73,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 8,
+      id: '8',
       name: 'Converse Chuck Taylor All Star',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -83,7 +83,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 9,
+      id: '9',
       name: 'Vans Old Skool',
       category: 'Skateboarding',
       image: 'assets/sneakers/2.png',
@@ -93,7 +93,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 10,
+      id: '10',
       name: 'Puma RS-X3 Puzzle',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -103,7 +103,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 11,
+      id: '11',
       name: 'Reebok Club C 85',
       category: 'Classic',
       image: 'assets/sneakers/2.png',
@@ -113,7 +113,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 12,
+      id: '12',
       name: 'Under Armour HOVR Sonic 4',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -123,7 +123,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 13,
+      id: '13',
       name: 'Salomon Speedcross 5',
       category: 'Trail Running',
       image: 'assets/sneakers/2.png',
@@ -133,7 +133,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 14,
+      id: '14',
       name: 'Brooks Ghost 13',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -143,7 +143,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 15,
+      id: '15',
       name: 'Mizuno Wave Rider 24',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -153,7 +153,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 16,
+      id: '16',
       name: 'Hoka One One Clifton 7',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -163,7 +163,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 17,
+      id: '17',
       name: 'Nike Air Zoom Pegasus 38',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -173,7 +173,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 18,
+      id: '18',
       name: 'Adidas Yeezy Boost 350 V2',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -183,7 +183,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 19,
+      id: '19',
       name: 'Jordan Retro 1 High OG',
       category: 'Basketball',
       image: 'assets/sneakers/2.png',
@@ -193,7 +193,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 20,
+      id: '20',
       name: 'Saucony Kinvara 12',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -203,7 +203,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 21,
+      id: '21',
       name: 'Brooks Adrenaline GTS 21',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -213,7 +213,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 22,
+      id: '22',
       name: 'Nike Blazer Mid \'77 Vintage',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -223,7 +223,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 23,
+      id: '23',
       name: 'Vans Sk8-Hi',
       category: 'Skateboarding',
       image: 'assets/sneakers/2.png',
@@ -233,7 +233,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 24,
+      id: '24',
       name: 'Converse Chuck 70',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -243,7 +243,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 25,
+      id: '25',
       name: 'Asics Gel-Nimbus 23',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -253,7 +253,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 26,
+      id: '26',
       name: 'The North Face Apex Bionic 2',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -262,7 +262,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 27,
+      id: '27',
       name: 'Patagonia Nano Puff Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/2.png',
@@ -271,7 +271,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 28,
+      id: '28',
       name: 'Arc\'teryx Atom LT Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/3.png',
@@ -280,7 +280,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 29,
+      id: '29',
       name: 'Columbia Steens Mountain Fleece',
       category: 'Casual',
       image: 'assets/jackets/4.png',
@@ -289,7 +289,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 30,
+      id: '30',
       name: 'Arc\'teryx Beta AR Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -298,7 +298,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 31,
+      id: '31',
       name: 'Canada Goose Expedition Parka',
       category: 'Winter',
       image: 'assets/jackets/1.png',
@@ -307,7 +307,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 32,
+      id: '32',
       name: 'Burberry Kensington Trench Coat',
       category: 'Classic',
       image: 'assets/jackets/2.png',
@@ -316,7 +316,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 33,
+      id: '33',
       name: 'Nike Sportswear Windrunner',
       category: 'Athletic',
       image: 'assets/jackets/3.png',
@@ -325,7 +325,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 34,
+      id: '34',
       name: 'Helly Hansen Crew Midlayer Jacket',
       category: 'Sailing',
       image: 'assets/jackets/4.png',
@@ -334,7 +334,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 35,
+      id: '35',
       name: 'Armani Exchange Puffer Jacket',
       category: 'Fashion',
       image: 'assets/jackets/5.png',
@@ -343,7 +343,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 36,
+      id: '36',
       name: 'Columbia Watertight II Rain Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -352,7 +352,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 37,
+      id: '37',
       name: 'Carhartt Active Jacket',
       category: 'Workwear',
       image: 'assets/jackets/2.png',
@@ -361,7 +361,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 38,
+      id: '38',
       name: 'Patagonia Better Sweater Jacket',
       category: 'Casual',
       image: 'assets/jackets/3.png',
@@ -370,7 +370,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 39,
+      id: '39',
       name: 'Marmot PreCip Eco Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -379,7 +379,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 40,
+      id: '40',
       name: 'The North Face Denali 2 Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -388,7 +388,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 41,
+      id: '41',
       name: 'Columbia Glennaker Lake Rain Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -397,7 +397,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 42,
+      id: '42',
       name: 'Canada Goose Chilliwack Bomber',
       category: 'Winter',
       image: 'assets/jackets/2.png',
@@ -406,7 +406,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 43,
+      id: '43',
       name: 'Barbour Ashby Wax Jacket',
       category: 'Classic',
       image: 'assets/jackets/3.png',
@@ -415,7 +415,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 44,
+      id: '44',
       name: 'Arc\'teryx Atom AR Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -424,7 +424,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 45,
+      id: '45',
       name: 'Moncler Maya Puffer Jacket',
       category: 'Fashion',
       image: 'assets/jackets/5.png',
@@ -433,7 +433,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 46,
+      id: '46',
       name: 'Tommy Hilfiger Packable Down Jacket',
       category: 'Casual',
       image: 'assets/jackets/1.png',
@@ -442,7 +442,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 47,
+      id: '47',
       name: 'Nike Tech Fleece Windrunner',
       category: 'Athletic',
       image: 'assets/jackets/2.png',
@@ -451,7 +451,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 48,
+      id: '48',
       name: 'Arc\'teryx Beta SL Hybrid Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/3.png',
@@ -460,7 +460,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 49,
+      id: '49',
       name: 'Mountain Hardwear Ghost Whisperer/2',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -469,7 +469,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 50,
+      id: '50',
       name: 'Arc\'teryx Cerium LT Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -478,7 +478,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 51,
+      id: '51',
       name: 'Apple MacBook Air M1',
       category: 'Ultrabook',
       image: 'assets/laptops/1.png',
@@ -488,7 +488,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 52,
+      id: '52',
       name: 'Dell XPS 13',
       category: 'Ultrabook',
       image: 'assets/laptops/2.png',
@@ -498,7 +498,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 53,
+      id: '53',
       name: 'HP Spectre x360 14',
       category: 'Convertible',
       image: 'assets/laptops/3.png',
@@ -508,7 +508,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 54,
+      id: '54',
       name: 'Lenovo ThinkPad X1 Carbon Gen 9',
       category: 'Business',
       image: 'assets/laptops/4.png',
@@ -518,7 +518,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 55,
+      id: '55',
       name: 'ASUS ROG Zephyrus G14',
       category: 'Gaming',
       image: 'assets/laptops/5.png',
@@ -528,7 +528,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 56,
+      id: '56',
       name: 'Acer Swift 5',
       category: 'Ultrabook',
       image: 'assets/laptops/1.png',
@@ -538,7 +538,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 57,
+      id: '57',
       name: 'Microsoft Surface Laptop 4',
       category: 'Ultrabook',
       image: 'assets/laptops/2.png',
@@ -548,7 +548,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 58,
+      id: '58',
       name: 'Razer Blade 15',
       category: 'Gaming',
       image: 'assets/laptops/3.png',
@@ -558,7 +558,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 59,
+      id: '59',
       name: 'Samsung Galaxy Book Pro 360',
       category: 'Convertible',
       image: 'assets/laptops/4.png',
@@ -568,7 +568,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 60,
+      id: '60',
       name: 'HP Envy 15',
       category: 'Ultrabook',
       image: 'assets/laptops/5.png',
@@ -578,7 +578,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 61,
+      id: '61',
       name: 'Alienware m15 R5',
       category: 'Gaming',
       image: 'assets/laptops/1.png',
@@ -588,7 +588,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 62,
+      id: '62',
       name: 'Apple MacBook Pro 14-inch M1 Pro',
       category: 'Professional',
       image: 'assets/laptops/2.png',
@@ -598,7 +598,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 63,
+      id: '63',
       name: 'Dell Latitude 9520',
       category: 'Business',
       image: 'assets/laptops/3.png',
@@ -608,7 +608,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 64,
+      id: '64',
       name: 'Lenovo Legion 5 Pro',
       category: 'Gaming',
       image: 'assets/laptops/4.png',
@@ -618,7 +618,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 65,
+      id: '65',
       name: 'ASUS ZenBook Duo 14',
       category: 'Dual Screen',
       image: 'assets/laptops/5.png',
@@ -628,7 +628,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 66,
+      id: '66',
       name: 'Acer Predator Helios 300',
       category: 'Gaming',
       image: 'assets/laptops/1.png',
@@ -638,7 +638,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 67,
+      id: '67',
       name: 'Microsoft Surface Laptop Studio',
       category: 'Convertible',
       image: 'assets/laptops/2.png',
@@ -648,7 +648,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 68,
+      id: '68',
       name: 'Razer Blade Stealth 13',
       category: 'Ultrabook',
       image: 'assets/laptops/3.png',
@@ -658,7 +658,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 69,
+      id: '69',
       name: 'Samsung Galaxy Book Flex 2',
       category: 'Convertible',
       image: 'assets/laptops/4.png',
@@ -668,7 +668,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 70,
+      id: '70',
       name: 'HP Omen 15',
       category: 'Gaming',
       image: 'assets/laptops/5.png',
@@ -678,7 +678,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 71,
+      id: '71',
       name: 'Acer Chromebook Spin 713',
       category: 'Chromebook',
       image: 'assets/laptops/1.png',
@@ -688,7 +688,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 72,
+      id: '72',
       name: 'Lenovo Yoga 9i',
       category: 'Convertible',
       image: 'assets/laptops/2.png',
@@ -698,7 +698,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 73,
+      id: '73',
       name: 'ASUS ROG Strix G15',
       category: 'Gaming',
       image: 'assets/laptops/3.png',
@@ -708,7 +708,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 74,
+      id: '74',
       name: 'Dell Inspiron 14 5000',
       category: 'Ultrabook',
       image: 'assets/laptops/4.png',
@@ -718,7 +718,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 75,
+      id: '75',
       name: 'Microsoft Surface Pro 8',
       category: 'Tablet PC',
       image: 'assets/laptops/5.png',
@@ -728,7 +728,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 76,
+      id: '76',
       name: 'Apple iPhone 13 Pro',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -738,7 +738,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 77,
+      id: '77',
       name: 'Samsung Galaxy S22 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -748,7 +748,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 78,
+      id: '78',
       name: 'Google Pixel 6 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -758,7 +758,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 79,
+      id: '79',
       name: 'OnePlus 10 Pro',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -768,7 +768,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 80,
+      id: '80',
       name: 'Apple iPhone SE (2022)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -778,7 +778,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 81,
+      id: '81',
       name: 'Xiaomi Mi 12 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -788,7 +788,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 82,
+      id: '82',
       name: 'Sony Xperia 1 III',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -798,7 +798,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 83,
+      id: '83',
       name: 'Samsung Galaxy Z Fold 3',
       category: 'Foldable',
       image: 'assets/phones/3.png',
@@ -808,7 +808,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 84,
+      id: '84',
       name: 'Xiaomi Redmi Note 11 Pro+',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -818,7 +818,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 85,
+      id: '85',
       name: 'Google Pixel 5a 5G',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -828,7 +828,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 86,
+      id: '86',
       name: 'Motorola Edge 30 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -838,7 +838,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 87,
+      id: '87',
       name: 'Apple iPhone 13 mini',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -848,7 +848,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 88,
+      id: '88',
       name: 'OnePlus 9 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -858,7 +858,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 89,
+      id: '89',
       name: 'Samsung Galaxy A53 5G',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -868,7 +868,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 90,
+      id: '90',
       name: 'Xiaomi Poco X4 Pro 5G',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -878,7 +878,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 91,
+      id: '91',
       name: 'Sony Xperia 5 III',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -888,7 +888,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 92,
+      id: '92',
       name: 'Realme GT 2 Pro',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -898,7 +898,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 93,
+      id: '93',
       name: 'Nokia X100',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -908,7 +908,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 94,
+      id: '94',
       name: 'LG Velvet 2 Pro 5G',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -918,7 +918,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 95,
+      id: '95',
       name: 'Motorola Moto G Stylus (2022)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -928,7 +928,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 96,
+      id: '96',
       name: 'Google Pixel 4a 5G',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -938,7 +938,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 97,
+      id: '97',
       name: 'Samsung Galaxy M52 5G',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -948,7 +948,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 98,
+      id: '98',
       name: 'Xiaomi Redmi Note 10 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -958,7 +958,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 99,
+      id: '99',
       name: 'OnePlus Nord 2',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -968,7 +968,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 100,
+      id: '100',
       name: 'Apple iPhone SE (2020)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -978,7 +978,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 101,
+      id: '101',
       name: 'Adidas Originals Trefoil Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -988,7 +988,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 102,
+      id: '102',
       name: 'Nike Sportswear Club Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -998,7 +998,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 103,
+      id: '103',
       name: 'Under Armour Men\'s Tech 2.0 Short Sleeve Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -1008,7 +1008,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 104,
+      id: '104',
       name: 'Puma Essentials Logo Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -1018,7 +1018,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 105,
+      id: '105',
       name: 'Levi\'s Men\'s Graphic Set-In Neck Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -1028,7 +1028,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 106,
+      id: '106',
       name: 'Hanes Men\'s ComfortSoft Short Sleeve T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -1038,7 +1038,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 107,
+      id: '107',
       name: 'Fruit of the Loom Men\'s Crew T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -1048,7 +1048,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 108,
+      id: '108',
       name: 'Champion Classic Jersey Script Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -1058,7 +1058,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 109,
+      id: '109',
       name: 'Tommy Hilfiger Men\'s Flag Crew Neck Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -1068,7 +1068,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 110,
+      id: '110',
       name: 'Gap Essential Crewneck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -1078,7 +1078,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 111,
+      id: '111',
       name: 'American Eagle Men\'s Heritage Pocket T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -1088,7 +1088,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 112,
+      id: '112',
       name: 'Abercrombie & Fitch Men\'s Short Sleeve Logo Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -1098,7 +1098,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 113,
+      id: '113',
       name: 'Ralph Lauren Men\'s Classic Fit Crewneck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -1108,7 +1108,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 114,
+      id: '114',
       name: 'Vans Classic T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -1118,7 +1118,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 115,
+      id: '115',
       name: 'Calvin Klein Men\'s Short Sleeve Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -1128,7 +1128,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 116,
+      id: '116',
       name: 'Lacoste Men\'s Crew Neck Pima Cotton Jersey T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -1138,7 +1138,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 117,
+      id: '117',
       name: 'Aéropostale Solid Crew Neck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -1148,7 +1148,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 118,
+      id: '118',
       name: 'Guess Men\'s Short Sleeve Triangle Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -1158,7 +1158,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 119,
+      id: '119',
       name: 'Hollister Men\'s Must-Have Crew T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -1168,7 +1168,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 120,
+      id: '120',
       name: 'Superdry Men\'s Vintage Logo Tri T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -1178,7 +1178,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 121,
+      id: '121',
       name: 'Diesel Men\'s T-Diego-Division Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -1188,7 +1188,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 122,
+      id: '122',
       name: 'Gap Essential V-Neck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -1198,7 +1198,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 123,
+      id: '123',
       name: 'Tommy Jeans Men\'s T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -1208,7 +1208,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 124,
+      id: '124',
       name: 'American Eagle Men\'s AE Surf Co. Graphic T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -1218,7 +1218,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 125,
+      id: '125',
       name: 'Abercrombie & Fitch Men\'s Short Sleeve Henley',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -1232,7 +1232,7 @@ class MyProducts{
 
   static List<Product> sneakers = [
     Product(
-      id: 1,
+      id: '1',
       name: 'Nike Air Max 200',
       category: 'Trending',
       image: 'assets/sneakers/1.png',
@@ -1242,7 +1242,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 2,
+      id: '2',
       name: 'Adidas Ultraboost 21',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1252,7 +1252,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 3,
+      id: '3',
       name: 'New Balance Fresh Foam 1080v11',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1262,7 +1262,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 4,
+      id: '4',
       name: 'Nike React Infinity Run Flyknit',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -1272,7 +1272,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 5,
+      id: '5',
       name: 'Asics Gel-Kayano 27',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1282,7 +1282,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 6,
+      id: '6',
       name: 'Nike Air Force 1 Low',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -1292,7 +1292,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 7,
+      id: '7',
       name: 'Adidas Stan Smith',
       category: 'Classic',
       image: 'assets/sneakers/2.png',
@@ -1302,7 +1302,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 8,
+      id: '8',
       name: 'Converse Chuck Taylor All Star',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -1312,7 +1312,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 9,
+      id: '9',
       name: 'Vans Old Skool',
       category: 'Skateboarding',
       image: 'assets/sneakers/2.png',
@@ -1322,7 +1322,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 10,
+      id: '10',
       name: 'Puma RS-X3 Puzzle',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -1332,7 +1332,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 11,
+      id: '11',
       name: 'Reebok Club C 85',
       category: 'Classic',
       image: 'assets/sneakers/2.png',
@@ -1342,7 +1342,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 12,
+      id: '12',
       name: 'Under Armour HOVR Sonic 4',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -1352,7 +1352,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 13,
+      id: '13',
       name: 'Salomon Speedcross 5',
       category: 'Trail Running',
       image: 'assets/sneakers/2.png',
@@ -1362,7 +1362,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 14,
+      id: '14',
       name: 'Brooks Ghost 13',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -1372,7 +1372,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 15,
+      id: '15',
       name: 'Mizuno Wave Rider 24',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1382,7 +1382,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 16,
+      id: '16',
       name: 'Hoka One One Clifton 7',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -1392,7 +1392,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 17,
+      id: '17',
       name: 'Nike Air Zoom Pegasus 38',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1402,7 +1402,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 18,
+      id: '18',
       name: 'Adidas Yeezy Boost 350 V2',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -1412,7 +1412,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 19,
+      id: '19',
       name: 'Jordan Retro 1 High OG',
       category: 'Basketball',
       image: 'assets/sneakers/2.png',
@@ -1422,7 +1422,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 20,
+      id: '20',
       name: 'Saucony Kinvara 12',
       category: 'Running',
       image: 'assets/sneakers/1.png',
@@ -1432,7 +1432,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 21,
+      id: '21',
       name: 'Brooks Adrenaline GTS 21',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1442,7 +1442,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 22,
+      id: '22',
       name: 'Nike Blazer Mid \'77 Vintage',
       category: 'Fashion',
       image: 'assets/sneakers/1.png',
@@ -1452,7 +1452,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 23,
+      id: '23',
       name: 'Vans Sk8-Hi',
       category: 'Skateboarding',
       image: 'assets/sneakers/2.png',
@@ -1462,7 +1462,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 24,
+      id: '24',
       name: 'Converse Chuck 70',
       category: 'Classic',
       image: 'assets/sneakers/1.png',
@@ -1472,7 +1472,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 25,
+      id: '25',
       name: 'Asics Gel-Nimbus 23',
       category: 'Running',
       image: 'assets/sneakers/2.png',
@@ -1484,7 +1484,7 @@ class MyProducts{
   ];
   static List<Product> jackets = [
     Product(
-      id: 26,
+      id: '26',
       name: 'The North Face Apex Bionic 2',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -1493,7 +1493,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 27,
+      id: '27',
       name: 'Patagonia Nano Puff Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/2.png',
@@ -1502,7 +1502,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 28,
+      id: '28',
       name: 'Arc\'teryx Atom LT Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/3.png',
@@ -1511,7 +1511,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 29,
+      id: '29',
       name: 'Columbia Steens Mountain Fleece',
       category: 'Casual',
       image: 'assets/jackets/4.png',
@@ -1520,7 +1520,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 30,
+      id: '30',
       name: 'Arc\'teryx Beta AR Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -1529,7 +1529,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 31,
+      id: '31',
       name: 'Canada Goose Expedition Parka',
       category: 'Winter',
       image: 'assets/jackets/1.png',
@@ -1538,7 +1538,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 32,
+      id: '32',
       name: 'Burberry Kensington Trench Coat',
       category: 'Classic',
       image: 'assets/jackets/2.png',
@@ -1547,7 +1547,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 33,
+      id: '33',
       name: 'Nike Sportswear Windrunner',
       category: 'Athletic',
       image: 'assets/jackets/3.png',
@@ -1556,7 +1556,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 34,
+      id: '34',
       name: 'Helly Hansen Crew Midlayer Jacket',
       category: 'Sailing',
       image: 'assets/jackets/4.png',
@@ -1565,7 +1565,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 35,
+      id: '35',
       name: 'Armani Exchange Puffer Jacket',
       category: 'Fashion',
       image: 'assets/jackets/5.png',
@@ -1574,7 +1574,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 36,
+      id: '36',
       name: 'Columbia Watertight II Rain Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -1583,7 +1583,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 37,
+      id: '37',
       name: 'Carhartt Active Jacket',
       category: 'Workwear',
       image: 'assets/jackets/2.png',
@@ -1592,7 +1592,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 38,
+      id: '38',
       name: 'Patagonia Better Sweater Jacket',
       category: 'Casual',
       image: 'assets/jackets/3.png',
@@ -1601,7 +1601,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 39,
+      id: '39',
       name: 'Marmot PreCip Eco Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -1610,7 +1610,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 40,
+      id: '40',
       name: 'The North Face Denali 2 Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -1619,7 +1619,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 41,
+      id: '41',
       name: 'Columbia Glennaker Lake Rain Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/1.png',
@@ -1628,7 +1628,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 42,
+      id: '42',
       name: 'Canada Goose Chilliwack Bomber',
       category: 'Winter',
       image: 'assets/jackets/2.png',
@@ -1637,7 +1637,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 43,
+      id: '43',
       name: 'Barbour Ashby Wax Jacket',
       category: 'Classic',
       image: 'assets/jackets/3.png',
@@ -1646,7 +1646,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 44,
+      id: '44',
       name: 'Arc\'teryx Atom AR Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -1655,7 +1655,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 45,
+      id: '45',
       name: 'Moncler Maya Puffer Jacket',
       category: 'Fashion',
       image: 'assets/jackets/5.png',
@@ -1664,7 +1664,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 46,
+      id: '46',
       name: 'Tommy Hilfiger Packable Down Jacket',
       category: 'Casual',
       image: 'assets/jackets/1.png',
@@ -1673,7 +1673,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 47,
+      id: '47',
       name: 'Nike Tech Fleece Windrunner',
       category: 'Athletic',
       image: 'assets/jackets/2.png',
@@ -1682,7 +1682,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 48,
+      id: '48',
       name: 'Arc\'teryx Beta SL Hybrid Jacket',
       category: 'Outdoor',
       image: 'assets/jackets/3.png',
@@ -1691,7 +1691,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 49,
+      id: '49',
       name: 'Mountain Hardwear Ghost Whisperer/2',
       category: 'Outdoor',
       image: 'assets/jackets/4.png',
@@ -1700,7 +1700,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 50,
+      id: '50',
       name: 'Arc\'teryx Cerium LT Hoody',
       category: 'Outdoor',
       image: 'assets/jackets/5.png',
@@ -1712,7 +1712,7 @@ class MyProducts{
 
   static List<Product> laptops = [
     Product(
-      id: 51,
+      id: '51',
       name: 'Apple MacBook Air M1',
       category: 'Ultrabook',
       image: 'assets/laptops/1.png',
@@ -1722,7 +1722,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 52,
+      id: '52',
       name: 'Dell XPS 13',
       category: 'Ultrabook',
       image: 'assets/laptops/2.png',
@@ -1732,7 +1732,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 53,
+      id: '53',
       name: 'HP Spectre x360 14',
       category: 'Convertible',
       image: 'assets/laptops/3.png',
@@ -1742,7 +1742,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 54,
+      id: '54',
       name: 'Lenovo ThinkPad X1 Carbon Gen 9',
       category: 'Business',
       image: 'assets/laptops/4.png',
@@ -1752,7 +1752,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 55,
+      id: '55',
       name: 'ASUS ROG Zephyrus G14',
       category: 'Gaming',
       image: 'assets/laptops/5.png',
@@ -1762,7 +1762,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 56,
+      id: '56',
       name: 'Acer Swift 5',
       category: 'Ultrabook',
       image: 'assets/laptops/1.png',
@@ -1772,7 +1772,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 57,
+      id: '57',
       name: 'Microsoft Surface Laptop 4',
       category: 'Ultrabook',
       image: 'assets/laptops/2.png',
@@ -1782,7 +1782,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 58,
+      id: '58',
       name: 'Razer Blade 15',
       category: 'Gaming',
       image: 'assets/laptops/3.png',
@@ -1792,7 +1792,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 59,
+      id: '59',
       name: 'Samsung Galaxy Book Pro 360',
       category: 'Convertible',
       image: 'assets/laptops/4.png',
@@ -1802,7 +1802,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 60,
+      id: '60',
       name: 'HP Envy 15',
       category: 'Ultrabook',
       image: 'assets/laptops/5.png',
@@ -1812,7 +1812,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 61,
+      id: '61',
       name: 'Alienware m15 R5',
       category: 'Gaming',
       image: 'assets/laptops/1.png',
@@ -1822,7 +1822,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 62,
+      id: '62',
       name: 'Apple MacBook Pro 14-inch M1 Pro',
       category: 'Professional',
       image: 'assets/laptops/2.png',
@@ -1832,7 +1832,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 63,
+      id: '63',
       name: 'Dell Latitude 9520',
       category: 'Business',
       image: 'assets/laptops/3.png',
@@ -1842,7 +1842,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 64,
+      id: '64',
       name: 'Lenovo Legion 5 Pro',
       category: 'Gaming',
       image: 'assets/laptops/4.png',
@@ -1852,7 +1852,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 65,
+      id: '65',
       name: 'ASUS ZenBook Duo 14',
       category: 'Dual Screen',
       image: 'assets/laptops/5.png',
@@ -1862,7 +1862,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 66,
+      id: '66',
       name: 'Acer Predator Helios 300',
       category: 'Gaming',
       image: 'assets/laptops/1.png',
@@ -1872,7 +1872,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 67,
+      id: '67',
       name: 'Microsoft Surface Laptop Studio',
       category: 'Convertible',
       image: 'assets/laptops/2.png',
@@ -1882,7 +1882,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 68,
+      id: '68',
       name: 'Razer Blade Stealth 13',
       category: 'Ultrabook',
       image: 'assets/laptops/3.png',
@@ -1892,7 +1892,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 69,
+      id: '69',
       name: 'Samsung Galaxy Book Flex 2',
       category: 'Convertible',
       image: 'assets/laptops/4.png',
@@ -1902,7 +1902,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 70,
+      id: '70',
       name: 'HP Omen 15',
       category: 'Gaming',
       image: 'assets/laptops/5.png',
@@ -1912,7 +1912,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 71,
+      id: '71',
       name: 'Acer Chromebook Spin 713',
       category: 'Chromebook',
       image: 'assets/laptops/1.png',
@@ -1922,7 +1922,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 72,
+      id: '72',
       name: 'Lenovo Yoga 9i',
       category: 'Convertible',
       image: 'assets/laptops/2.png',
@@ -1932,7 +1932,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 73,
+      id: '73',
       name: 'ASUS ROG Strix G15',
       category: 'Gaming',
       image: 'assets/laptops/3.png',
@@ -1942,7 +1942,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 74,
+      id: '74',
       name: 'Dell Inspiron 14 5000',
       category: 'Ultrabook',
       image: 'assets/laptops/4.png',
@@ -1952,7 +1952,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 75,
+      id: '75',
       name: 'Microsoft Surface Pro 8',
       category: 'Tablet PC',
       image: 'assets/laptops/5.png',
@@ -1965,7 +1965,7 @@ class MyProducts{
 
   static List<Product> phones = [
     Product(
-      id: 76,
+      id: '76',
       name: 'Apple iPhone 13 Pro',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -1975,7 +1975,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 77,
+      id: '77',
       name: 'Samsung Galaxy S22 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -1985,7 +1985,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 78,
+      id: '78',
       name: 'Google Pixel 6 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -1995,7 +1995,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 79,
+      id: '79',
       name: 'OnePlus 10 Pro',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -2005,7 +2005,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 80,
+      id: '80',
       name: 'Apple iPhone SE (2022)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -2015,7 +2015,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 81,
+      id: '81',
       name: 'Xiaomi Mi 12 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -2025,7 +2025,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 82,
+      id: '82',
       name: 'Sony Xperia 1 III',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -2035,7 +2035,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 83,
+      id: '83',
       name: 'Samsung Galaxy Z Fold 3',
       category: 'Foldable',
       image: 'assets/phones/3.png',
@@ -2045,7 +2045,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 84,
+      id: '84',
       name: 'Xiaomi Redmi Note 11 Pro+',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -2055,7 +2055,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 85,
+      id: '85',
       name: 'Google Pixel 5a 5G',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -2065,7 +2065,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 86,
+      id: '86',
       name: 'Motorola Edge 30 Ultra',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -2075,7 +2075,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 87,
+      id: '87',
       name: 'Apple iPhone 13 mini',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -2085,7 +2085,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 88,
+      id: '88',
       name: 'OnePlus 9 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -2095,7 +2095,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 89,
+      id: '89',
       name: 'Samsung Galaxy A53 5G',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -2105,7 +2105,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 90,
+      id: '90',
       name: 'Xiaomi Poco X4 Pro 5G',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -2115,7 +2115,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 91,
+      id: '91',
       name: 'Sony Xperia 5 III',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -2125,7 +2125,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 92,
+      id: '92',
       name: 'Realme GT 2 Pro',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -2135,7 +2135,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 93,
+      id: '93',
       name: 'Nokia X100',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -2145,7 +2145,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 94,
+      id: '94',
       name: 'LG Velvet 2 Pro 5G',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -2155,7 +2155,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 95,
+      id: '95',
       name: 'Motorola Moto G Stylus (2022)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -2165,7 +2165,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 96,
+      id: '96',
       name: 'Google Pixel 4a 5G',
       category: 'Smartphone',
       image: 'assets/phones/1.png',
@@ -2175,7 +2175,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 97,
+      id: '97',
       name: 'Samsung Galaxy M52 5G',
       category: 'Smartphone',
       image: 'assets/phones/2.png',
@@ -2185,7 +2185,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 98,
+      id: '98',
       name: 'Xiaomi Redmi Note 10 Pro',
       category: 'Smartphone',
       image: 'assets/phones/3.png',
@@ -2195,7 +2195,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 99,
+      id: '99',
       name: 'OnePlus Nord 2',
       category: 'Smartphone',
       image: 'assets/phones/4.png',
@@ -2205,7 +2205,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 100,
+      id: '100',
       name: 'Apple iPhone SE (2020)',
       category: 'Smartphone',
       image: 'assets/phones/5.png',
@@ -2218,7 +2218,7 @@ class MyProducts{
 
   static List<Product> tShirts = [
     Product(
-      id: 101,
+      id: '101',
       name: 'Adidas Originals Trefoil Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -2228,7 +2228,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 102,
+      id: '102',
       name: 'Nike Sportswear Club Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -2238,7 +2238,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 103,
+      id: '103',
       name: 'Under Armour Men\'s Tech 2.0 Short Sleeve Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -2248,7 +2248,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 104,
+      id: '104',
       name: 'Puma Essentials Logo Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -2258,7 +2258,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 105,
+      id: '105',
       name: 'Levi\'s Men\'s Graphic Set-In Neck Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -2268,7 +2268,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 106,
+      id: '106',
       name: 'Hanes Men\'s ComfortSoft Short Sleeve T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -2278,7 +2278,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 107,
+      id: '107',
       name: 'Fruit of the Loom Men\'s Crew T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -2288,7 +2288,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 108,
+      id: '108',
       name: 'Champion Classic Jersey Script Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -2298,7 +2298,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 109,
+      id: '109',
       name: 'Tommy Hilfiger Men\'s Flag Crew Neck Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -2308,7 +2308,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 110,
+      id: '110',
       name: 'Gap Essential Crewneck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -2318,7 +2318,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 111,
+      id: '111',
       name: 'American Eagle Men\'s Heritage Pocket T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -2328,7 +2328,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 112,
+      id: '112',
       name: 'Abercrombie & Fitch Men\'s Short Sleeve Logo Tee',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -2338,7 +2338,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 113,
+      id: '113',
       name: 'Ralph Lauren Men\'s Classic Fit Crewneck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -2348,7 +2348,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 114,
+      id: '114',
       name: 'Vans Classic T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -2358,7 +2358,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 115,
+      id: '115',
       name: 'Calvin Klein Men\'s Short Sleeve Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -2368,7 +2368,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 116,
+      id: '116',
       name: 'Lacoste Men\'s Cotton Jersey T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -2378,7 +2378,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 117,
+      id: '117',
       name: 'Aéropostale Solid Crew Neck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -2388,7 +2388,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 118,
+      id: '118',
       name: 'Guess Men\'s Short Sleeve Triangle Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -2398,7 +2398,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 119,
+      id: '119',
       name: 'Hollister Men\'s Must-Have Crew T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -2408,7 +2408,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 120,
+      id: '120',
       name: 'Superdry Men\'s Vintage Logo Tri T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',
@@ -2418,7 +2418,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 121,
+      id: '121',
       name: 'Diesel Men\'s T-Diego-Division Logo T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/1.png',
@@ -2428,7 +2428,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 122,
+      id: '122',
       name: 'Gap Essential V-Neck T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/2.png',
@@ -2438,7 +2438,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 123,
+      id: '123',
       name: 'Tommy Jeans Men\'s T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/3.png',
@@ -2448,7 +2448,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 124,
+      id: '124',
       name: 'American Eagle Men\'s AE Surf Co. Graphic T-Shirt',
       category: 'T-Shirt',
       image: 'assets/tshirts/4.png',
@@ -2458,7 +2458,7 @@ class MyProducts{
       quantity: 1,
     ),
     Product(
-      id: 125,
+      id: '125',
       name: 'Abercrombie & Fitch Men\'s Short Sleeve Henley',
       category: 'T-Shirt',
       image: 'assets/tshirts/5.png',

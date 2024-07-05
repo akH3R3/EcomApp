@@ -1,5 +1,6 @@
 import 'package:ecom_app/providers/cart_provider.dart';
 import 'package:ecom_app/providers/favourite_provider.dart';
+import 'package:ecom_app/screens/auth_screens/forgetpass_screen.dart';
 import 'package:ecom_app/screens/auth_screens/login_screen.dart';
 import 'package:ecom_app/screens/auth_screens/signup_screen.dart';
 import 'package:ecom_app/screens/home_screen.dart';
@@ -42,7 +43,7 @@ class _MyAppState extends State<MyApp> {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:  OnBoardingScreen(),
+        home: AuthWrapper(),
       ),
     );
   }

@@ -1,4 +1,5 @@
 
+import 'package:ecom_app/screens/auth_screens/login_screen.dart';
 import 'package:ecom_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -125,9 +126,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 onLastPage
                     ? GestureDetector(
                         onTap: () {
-                          Navigator.push(context,
+                          Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {
-                            return const SplashScreen();
+                            return const LoginScreen();
                           }));
                         },
                         child: const Text("Done"),

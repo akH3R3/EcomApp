@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List screen = [
     StartingScreen(),
     const FavouriteScreen(),
-   CartDetails(),
+    CartScreen(),
     ProfileScreen(),
     MenuScreen(),
   ];

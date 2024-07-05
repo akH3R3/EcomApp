@@ -28,19 +28,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _loadProfileData() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _nameController.text = prefs.getString('name') ?? '';
-      _emailController.text = prefs.getString('email') ?? '';
-      _phoneController.text = prefs.getString('phone') ?? '';
-      _passwordController.text = prefs.getString('password') ?? '';
-      _bioController.text = prefs.getString('bio') ?? '';
-      String? imagePath = prefs.getString('profileImage');
-      if (imagePath != null && imagePath.isNotEmpty) {
-        _profileImage = File(imagePath);
-      }
-    });
-  }
+  final prefs = await SharedPreferences.getInstance();
+  setState(() {
+    _nameController.text = prefs.getString('name') ?? '';
+    _emailController.text = prefs.getString('email') ?? '';
+    _phoneController.text = prefs.getString('phone') ?? '';
+    _passwordController.text = prefs.getString('password') ?? '';
+    _bioController.text = prefs.getString('bio') ?? '';
+    String? imagePath = prefs.getString('profileImage');
+    if (imagePath != null && imagePath.isNotEmpty) {
+      _profileImage = File(imagePath);
+    }
+  });
+}
 
   Future<void> _saveProfileData() async {
     final prefs = await SharedPreferences.getInstance();
@@ -90,7 +90,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           IconButton(
             color: Colors.black,
             
-            icon: const Icon(Icons.settings,size: 25),
+            icon: const Icon(Icons.settings,size: 27),
             onPressed: () {
               Navigator.push(
                   context,
@@ -133,7 +133,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.only(left: 21, right: 21, bottom: 10),
                 child: TextField(
                   controller: _bioController,
                   maxLines: 2,
@@ -151,22 +151,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 12, left: 12, top: 3, bottom: 7),
+                padding: const EdgeInsets.only(right: 20, left: 20, top: 3, bottom: 7),
                 child: MyTextfield('Name', false, _nameController),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 12, left: 12, top: 3, bottom: 7),
+                padding: const EdgeInsets.only(right: 20, left: 20, top: 3, bottom: 7),
                 child: MyTextfield('Email', false, _emailController),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 12, left: 12, top: 3, bottom: 7),
+                padding: const EdgeInsets.only(right: 20, left: 20, top: 3, bottom: 7),
                 child: MyTextfield('Phone', false, _phoneController),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 12, left: 12, top: 3, bottom: 7),
+                padding: const EdgeInsets.only(right: 20, left: 20, top: 3, bottom: 7),
                 child: MyTextfield('Password', true, _passwordController),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 5),
               MyButton(
                   text: 'Save Profile',
                   onPressed: () {
@@ -175,7 +175,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       content: Text('Profile Updated'),
                     ));
                   }),
-              SizedBox(height: 13),
+              SizedBox(height: 12),
               MyButton(
                   text: 'Logout',
                   onPressed: () {
